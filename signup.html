@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hundred Nights</title>
+</head>
+<link rel="stylesheet" type="text/css" href="signup.css">
+<link rel="icon" type="image/x-icon" href="images/logo.png">
+<body>
+<div class=background>
+	<center>
+	   <img src="images/hundrednights season1.png" height="37.5%" width="37.5%" style="margin-top: 50px; margin-bottom: 50px;">
+	   <br>
+	   <!-- <form class="login"> -->
+	 	  <div align="left" style="background-color: #48494B; border: 3.75px solid #1D1F1E; width: 50vw; padding: 25px;">
+	 	  	  <center><img src="images/signup.png" height="37.5%" width="25%"></center><br>
+	 	  	  <left>
+	 	  	    <p align="left" style="font-size: 30px; color: #ffffff;">Username</p>
+	 	  	    <input align="left" style="font-size: 25px; color: #ffffff; padding: 7.5px; width: 48.75vw; align: left; background-color: #313234; border: 2.5px solid #1F2022; margin-top: 5px; margin-bottom: 15px" type="text" placeholder="Create your username... (must be same as Minecraft username)" name="hundrednights-username" required>
+	 	  	    <p align="left" style="font-size: 30px; color: #ffffff;">Password</p>
+	 	  	    <table><tr>
+	 	  	    <td><input align="left" style="font-size: 25px; color: #ffffff; padding: 7.5px; width: 45vw; align: left; background-color: #313234; border: 2.5px solid #1F2022; margin-top: 5px; margin-bottom: 15px" type="password" placeholder="Create password... (must be atleast 8 characters)" name="hundrednights-password" id="password-login" required></td>
+	 	  	    <td><img src="images/eye.png" width="50px" height="50px" style="margin-left: 10px;" class="eye" id="eye" onclick="seePass()"></td>
+	 	  	    </tr></table>
+	 	  	    	 	  	    <table><tr>
+	 	  	    <td><input align="left" style="font-size: 25px; color: #ffffff; padding: 7.5px; width: 45vw; align: left; background-color: #313234; border: 2.5px solid #1F2022; margin-top: 5px; margin-bottom: 15px" type="password" placeholder="Confirm password..." name="hundrednights-confpassword" id="confpassword-login" required></td>
+	 	  	    <td><img src="images/eye.png" width="50px" height="50px" style="margin-left: 10px;" class="eye" id="confeye" onclick="seeConfirmPass()"></td>
+	 	  	    </tr></table>
+	 	  	    <p align="left" style="font-size: 30px; color: #ffffff;">Discord Username</p>
+	 	  	    <input align="left" style="font-size: 25px; color: #ffffff; padding: 7.5px; width: 48.75vw; align: left; background-color: #313234; border: 2.5px solid #1F2022; margin-top: 5px; margin-bottom: 15px" type="text" placeholder="Enter Discord username..." name="hundrednights-disc-username" required>
+	 	  	    <center><button class="login-button" id="logbutton">Create account</button></center>
+	 	  	    <p class="alracc" align="center"><a href="https://thehundrednights.github.io">Already have an account?</a></p>
+	 	  	  </left>
+		   </div>
+	   <!-- </form> -->
+	</center>
+	<p class="footer" align="bottom">Note: This is only for testing the GUI, the actual sign up feature will be added soon</p>
+</div>
+</body>
+<script type="text/javascript">
+	function seePass() {
+  var passlog = document.getElementById("password-login");
+  var eye = document.getElementById("eye");
+  if (passlog.type === "password") {
+    passlog.type = "text";
+    eye.src = "images/closedeye.png";
+  } else {
+    passlog.type = "password";
+    eye.src = "images/eye.png";
+  }
+}
+
+function seeConfirmPass() {
+  var confpasslog = document.getElementById("confpassword-login");
+  var confeye = document.getElementById("confeye");
+  if (confpasslog.type === "password") {
+    confpasslog.type = "text";
+    confeye.src = "images/closedeye.png";
+  } else {
+    confpasslog.type = "password";
+    confeye.src = "images/eye.png";
+  }
+}
+</script>
+</html>
