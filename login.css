@@ -65,6 +65,10 @@
 	filter: drop-shadow(0px 0px 5px #ffffff);
 	transform: scale(1.05); 
 }
+.noacc a {
+	color: white;
+  text-decoration: none;
+}
 .login-button {
 	font-size: 25px;
 	height:  55px;
