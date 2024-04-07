@@ -41,6 +41,12 @@
   transform: scale(1.1); 
 }
 
+.eye:active {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 0px #ffffff);
+  transform: scale(1.0); 
+}
+
 .forgor {
 	font-size: 20px;
 	color: white;
