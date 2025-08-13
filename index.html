@@ -3,47 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hundred Nights</title>
+	<title>Home - Hundred Nights</title>
 </head>
- <link rel="stylesheet" type="text/css" href="login.css">
+ <link rel="stylesheet" type="text/css" href="index.css">
 <link rel="icon" type="image/x-icon" href="images/logo.png">
 <body>
 <div class=background>
 	<center>
-	   <img src="images/hundrednights season1.png" height="37.5%" width="37.5%" style="margin-top: 50px; margin-bottom: 50px;">
-	   <br>
-	   <!-- <form class="login"> -->
-	 	  <div align="left" style="background-color: #48494B; border: 3.75px solid #1D1F1E; width: 50vw; padding: 25px;">
-	 	  	  <center><img src="images/login.png" height="37.5%" width="25%"></center><br>
-	 	  	  <left>
-	 	  	    <p align="left" style="font-size: 30px; color: #ffffff;">Username</p>
-	 	  	    <input align="left" style="font-size: 25px; color: #ffffff; padding: 7.5px; width: 48.75vw; align: left; background-color: #313234; border: 2.5px solid #1F2022; margin-top: 5px; margin-bottom: 15px" type="text" placeholder="Enter username... (must be same as Minecraft username)" name="hundrednights-username" required>
-	 	  	    <p align="left" style="font-size: 30px; color: #ffffff;">Password</p>
-	 	  	    <table><tr>
-	 	  	    <td><input align="left" style="font-size: 25px; color: #ffffff; padding: 7.5px; width: 45vw; align: left; background-color: #313234; border: 2.5px solid #1F2022; margin-top: 5px; margin-bottom: 15px" type="password" placeholder="Enter password..." name="hundrednights-password" id="password-login" required></td>
-	 	  	    <td><img src="images/eye.png" width="50px" height="50px" style="margin-left: 10px;" class="eye" id="eye" onclick="seePass()"></td>
-	 	  	    </tr></table>
-	 	  	    <p class="forgor">Forgot password?</p><br>
-	 	  	    <center><button class="login-button" id="logbutton">Login</button></center>
-	 	  	    <p class="noacc" align="center"><a href="https://thehundrednights.github.io/signup.html">Don't have an account?</a></p>
-	 	  	  </left>
-		   </div>
-	   <!-- </form> -->
+	<img src="images/hundrednights title.png" height="90" width="786" style="margin-top: 50px; margin-bottom: 50px;">
+	<p class="normal" style="font-size: 62.5px; filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 1)); margin-bottom: 25px;">Home</p>
+	<div class="button-container">
+        <button><a href="players.html"><center><img src="images/earth.png" height="80%" width="80%"></center>History/Wiki</a></button>
+        <button><a href="list.html"><center><img src="images/list.png" height="80%" width="80%"></center>List</a></button>
+        <button><a href="players.html"><center><img src="images/player.png" height="80%" width="80%"></center>Players</a></button>
+    </div>
 	</center>
-	<p class="footer" align="bottom">Note: This is only for testing the GUI, the actual login feature will be added soon</p>
 </div>
 </body>
-<script type="text/javascript">
-	function seePass() {
-  var passlog = document.getElementById("password-login");
-  var eye = document.getElementById("eye");
-  if (passlog.type === "password") {
-    passlog.type = "text";
-    eye.src = "images/closedeye.png";
-  } else {
-    passlog.type = "password";
-    eye.src = "images/eye.png";
-  }
-}
-</script>
 </html>
